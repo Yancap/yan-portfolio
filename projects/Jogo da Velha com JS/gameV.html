@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        
+        <section id="start">
+            <h1>Bem Vindo ao Jogo da Velha</h1>
+            <p>Esse jogo foi desenvolvido por Yan Gabriel como uma forma de testar meus
+                conhecimentos em JavaScript, espero que goste!
+            </p>
+            <button onclick="startGame()">Iniciar Partida</button>
+            
+            <div class="blend-exclusion"></div>
+        </section>
+        <section class="bg-game">
+            <div class="blend-exclusion"></div>
+            <header class="panel">
+                
+                <div class="players turn" id="play1">
+                    <h3>Jogador 1</h3>
+                    <i class="fa-solid fa-x fa-2x"></i>
+                </div>
+                <div id="time">
+                    
+                </div>
+                <div class="players" id="play2">
+                    <h3>Jogador 2</h3>
+                    <i class="fa-solid fa-o fa-2x"></i>
+                </div>
+                
+            </header>
+            <div class="container">
+                <div class="square" id="q1" onclick="Game.selectSquare('q1')">
+                    
+                </div>
+                <div class="square" id="q2" onclick="Game.selectSquare('q2')">
+                    
+                </div>
+                <div class="square" id="q3" onclick="Game.selectSquare('q3')">
+
+                </div>
+                <div class="square" id="q4" onclick="Game.selectSquare('q4')">
+
+                </div>
+                <div class="square" id="q5" onclick="Game.selectSquare('q5')"> 
+
+                </div>
+                <div class="square" id="q6" onclick="Game.selectSquare('q6')">
+
+                </div>
+                <div class="square" id="q7" onclick="Game.selectSquare('q7')">
+
+                </div>
+                <div class="square" id="q8" onclick="Game.selectSquare('q8')">
+
+                </div>
+                <div class="square" id="q9" onclick="Game.selectSquare('q9')">
+
+                </div>
+                <span id="mark"></span>
+            </div>
+            <div id="screen-win">
+                
+                <div id="restart" onclick="Game.restart()">Jogar Novamente</div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

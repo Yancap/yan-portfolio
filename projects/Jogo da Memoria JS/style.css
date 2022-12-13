@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(102, 102, 102);
+}
+
+
+
+.py{
+    background-image: url("images/python.webp");
+}
+.js{
+    background-image: url("images/js.png");
+    background-position: bottom;
+}
+.css{
+    background-image: url("images/css.jpg");
+}
+.html{
+    background-image: url("images/html5.webp");
+}
+.btstrap{
+    background-image: url("images/bootstrap5.jpeg");
+}
+.node{
+    background-image: url("images/node.png");
+    background-size: cover;
+}
+.react{
+    background-image: url("images/react.png");
+}
+.jquery{
+    background-image: url("images/Jquery.webp");
+}
+.flask{
+    background-image: url("images/flask.webp");
+}
+.figma{
+    background-image: url("images/figma.jpg");
+}
+#game{
+    background-color: rgb(118, 160, 240);
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    /* display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 2fr); */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem calc(11rem + 10%);
+    
+    gap: 1rem;
+}
+
+.card{
+    
+    height: 140px;
+    width: 145px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.front{
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.back, .front{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    
+}
+.back{
+    background-color: rgb(54, 54, 54);
+    background-image: url("images.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.flip{
+    transform: rotateY(180deg);
+}
+.message-win{
+    background-color: rgba(228, 133, 17, 0.452);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.178);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 40px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    left: 20%;
+    bottom: 25%;
+    z-index: 1;
+
+}
+h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+    
+}
+button{
+    cursor: pointer;
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 1% 2%;
+    border: none 0;
+    font-size: 1.5em;
+    transition: 0.2s ease-out;
+}
+
+button:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1250px) {
+    #game{
+        gap: 0.5rem;
+        padding: 2.5rem calc(9rem + 10%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #game{
+        gap: 0.5rem;
+        padding: 2.5rem calc(7rem + 10%);
+    }
+}
+        
+    
+
+@media screen and (max-width: 1100px) {
+    #game{
+        padding: 2.5rem calc(4.5rem + 10%);
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    html{
+        font-size: 14px;
+    }
+    
+    #game{
+        padding: 2.5rem calc(3rem + 10%);
+        
+    }
+    .card{
+        height: 120px;
+        width: 130px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    
+    #game{
+        padding: 2.5rem calc(5rem + 5%);
+        gap: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    #game{
+        padding: 2.5rem calc(3rem + 5%);
+        
+    }
+    .card{
+        height: 115px;
+        width: 115px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #game{
+        padding: 2.5rem calc(1rem + 5%);
+        
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #game{
+        padding: 2.5rem  2.5%;
+        
+    }
+    .card{
+        height: 105px;
+        width: 105px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #game{
+        padding: 2.5rem  2.5%;
+        
+    }
+    .message-win{
+        font-size: 14px;
+    }
+    .card{
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #game{
+        padding: 2.5rem  1%;
+        
+    }
+    .card{
+        width: 80px;
+        height: 80px;
+    }
+    .message-win{
+        width: 80%;
+        left: 8%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #game{
+        padding: 2.5rem  1%;
+        
+    }
+    .card{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    #game{
+        padding: 2.5rem  1%;
+        
+    }
+    .card{
+        width: 60px;
+        height: 60px;
+    }
+    .message-win{
+        width: 80%;
+        left: 8%;
+    }
+}

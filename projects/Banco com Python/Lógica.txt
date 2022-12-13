@@ -1,0 +1,10 @@
+Fazer um sistema bancario de saque usando POO contendo os seguintes pontos
+
+	Saque e Deposito
+	Criação e login de conta, usando bancos de dados, com senhas, conta bancaria, codigo de segurança
+	Transferencia Bancaria
+	Conversão para dolar, euro e bitcoin
+
+criar uma classe banco com login, agencia bancaria, senha e codigo de segurança
+perguntar se quer logar ou criar conta
+criar metodos para ambos os casos	
