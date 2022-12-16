@@ -83,13 +83,6 @@ footer{
     color: #D2EFFF;
     transform: scale(1.025);
 }
-
-#index{
-    
-    padding: 4.5rem 7.5rem 0% 7.5rem;
-    overflow: hidden;
-}
-
 .section{
     padding: 3rem 10vw;
 }
@@ -114,11 +107,12 @@ footer{
     
 }
 #index{
-    
+    padding: 4.5rem 7.5rem 0% 7.5rem;
+    overflow: hidden;
     background-image: url("avatar.png");
     background-repeat: no-repeat;
-    background-position: bottom left 13%;
-    background-size: 33rem;
+    background-position: bottom left 3%;
+    background-size: 40rem;
 }
 .info-index{
     display: flex;
@@ -477,8 +471,8 @@ i:hover{
 }
 @media screen and (max-width: 1210px){
     #index{
-        background-position: bottom left;
-        background-size: 30rem;
+        background-position: bottom left -20%;
+        background-size: 37rem;
     }
 }
 
@@ -513,7 +507,7 @@ i:hover{
     }
 }
 
-@media screen and (max-width: 952px){
+@media screen and (max-width: 910px){
     
     #index{
         
