@@ -469,6 +469,11 @@ i:hover{
 .accordion-body{
     font-family: 'Montserrat', sans-serif;
 }
+
+.icon{
+    text-decoration: none;
+    
+}
 @media screen and (max-width: 1210px){
     #index{
         background-position: bottom left -20%;
