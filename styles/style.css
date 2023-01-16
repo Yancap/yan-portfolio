@@ -477,14 +477,64 @@ i:hover{
 }
 
 /* ---------Animações----------- */
-/* .active-scroll:nth-child(1){
+#index{
+    animation: show-img-index 1s forwards;
+}
 
-} */
-.accordion, #capacidades header{
+.stripe{
+    animation: show-text 1s forwards;
+}
+.info-index .name{
     opacity: 0;
+    transform: translateX(500px);
+    animation: show-text 1s 0.5s forwards;
+}
+.info-dev{
+    opacity: 0;
+    transform: translateX(500px);
+    animation: show-text 1s 0.75s forwards;
+}
+
+.info-index a{
+    opacity: 0;
+    transform: translateX(500px);
+    animation: show-text 1s 1s forwards;
+}
+@keyframes show-img-index { 
+      from{
+            background-size: 0rem;
+           
+        }
+        to{
+            
+           background-size: 40rem;
+           
+        }
+        
 }
 
 
+@keyframes show-text {
+    from{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to{
+       opacity: 1;
+       transform: translateX(00px);
+    }
+}
+
+
+
+
+.accordion, #capacidades header, .soft-card, #group-project header, .card, #personal-project header{
+    opacity: 0;
+}
+
+#soft-skills{
+   background-size: 0rem;
+}
 
 @keyframes show-title {
     from{
@@ -508,8 +558,60 @@ i:hover{
 }
 
 
+@keyframes soft-skills{
+    from{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes soft-skills-img {
+    from{
+        background-size: 0rem;
+    }
+    to{
+        
+       background-size: 31.25rem;
+        
+    }
+    
+}
+
+@keyframes projects {
+    from{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 1210px){
+    @keyframes show-img-index {
+   
+        from{
+            background-size: 0rem;
+        }
+        to{
+            
+           background-size: 37rem;
+            
+        }
+        
+    
+    }
     #index{
         background-position: bottom left -20%;
         background-size: 37rem;

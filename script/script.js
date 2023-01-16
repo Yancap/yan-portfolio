@@ -19,7 +19,7 @@ btn.addEventListener("click", function(busca){
 
 
 
-
+// Continuar fazendo as outras
 function showSectionScrolled(){
     const sections = document.querySelectorAll(".scroll")
     sections.forEach((section)=>{
@@ -27,6 +27,7 @@ function showSectionScrolled(){
           
           const topSection = section.getBoundingClientRect().top - (window.innerHeight * 0.6)
           if(topSection < 0){
+            // Animação da sessão de Capacidades
             if(section == document.getElementById("capacidades")){
               section.classList.add('active-scroll')
               let cards = document.querySelectorAll(".accordion")
@@ -36,21 +37,55 @@ function showSectionScrolled(){
               cards.forEach((card)=>{
 
                   card.style.animation = "skill-content 1s " + i*0.2 +"s forwards"
-                  card.style.animationDelay
-                  console.log("a");
+                  
                   i++
                 
               })
             }
             if(section == document.getElementById("soft-skills")){
+              section.classList.add('active-scroll')
+              let cards = document.querySelectorAll(".soft-card")
+              document.querySelector("#soft-skills").style.animation = "soft-skills-img 1s forwards"
               
+              let i = 1
+              cards.forEach((card)=>{
+
+                  card.style.animation = "soft-skills 1s " + i*0.2 +"s forwards"
+                  i++
+                
+              })
+            } else if(section == document.getElementById("group-project")){
+              section.classList.add('active-scroll')
+              let cards = document.querySelectorAll("#group-project .card")
+              document.querySelector("#group-project header").style.animation = "show-title 1s forwards"
+              
+              let i = 1
+              cards.forEach((card)=>{
+
+                  card.style.animation = "projects 1s " + i*0.2 +"s forwards"
+                  
+                  i++
+                
+              })
+            } else if(section == document.getElementById("personal-project")){
+              section.classList.add('active-scroll')
+              let cards = document.querySelectorAll("#personal-project .card")
+              document.querySelector("#personal-project header").style.animation = "show-title 1s forwards"
+              
+              let i = 1
+              cards.forEach((card)=>{
+
+                  card.style.animation = "projects 1s " + i*0.2 +"s forwards"
+                  
+                  i++
+                
+              })
             }
           }
         }else{
           
         }
         
-
     })
 }
 
