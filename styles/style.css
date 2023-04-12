@@ -33,6 +33,29 @@
 #contact{
     background-color: #13293D;
 }
+
+.important{
+    height: 30vh;
+    width: 60vw;
+    padding: 20px;
+    background-color: #000;
+    color: #B7E5FF;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 4px 4px 100vw #00000091;
+}
+
+.important a{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 .img-thumbnail-dark{
     
         padding: .25rem;
